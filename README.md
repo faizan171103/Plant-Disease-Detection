@@ -2,8 +2,6 @@
 
 ## PLANT-AI [Recognition of Plant Diseases by Leaf Image Classification]
 
-local host : http://127.0.0.1:5000/
-
 ## Description
 
 Food security for billions of people on earth requires minimizing crop damage by timely detection of diseases.Developing methods
