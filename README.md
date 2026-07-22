@@ -2,12 +2,6 @@
 
 ## PLANT-AI [Recognition of Plant Diseases by Leaf Image Classification]
 
-### <a href="https://plant49-ai.herokuapp.com/" target="_blank">https://plant49-ai.herokuapp.com/</a>
-
-## <img src="./Assets/web.gif" alt="demo"/>
-
- </div>
-
 ## Description
 
 Food security for billions of people on earth requires minimizing crop damage by timely detection of diseases.Developing methods
@@ -82,3 +76,6 @@ This project is Licensed under `MIT`
 
 ### Show your support
 
+Give a ⭐ if you like this website!
+
+<a href="https://www.buymeacoffee.com/soumyajit4419" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" height= "60px" width= "217px" ></a>
