@@ -49,8 +49,6 @@ This process for building a model which can detect the disease assocaited with t
 
   <img src="./Assets/models.png" alt="models" />
 
-All the version with code can be seen in `jovian.ml` (https://jovian.ml/soumyajit4419/course-project-plant-disease-classification)
-<br/>
 
 ## Details about the model
 
