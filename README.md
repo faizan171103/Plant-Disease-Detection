@@ -1,81 +1,139 @@
 <div align="center">
 
-## PLANT-AI [Recognition of Plant Diseases by Leaf Image Classification]
+# 🌱 PLANT-AI  
+### Recognition of Plant Diseases Using Leaf Image Classification
 
-## Description
+</div>
 
-Food security for billions of people on earth requires minimizing crop damage by timely detection of diseases.Developing methods
-for detection of plant diseases serves the dual purpose of increasing crop yield and reducing pesticide use without knowing
-about the proper disease. Along with development of better crop varieties, disease detection is thus paramount goal for achieving
-food security. The traditional method of disease detection has been to use manual examination by either farmers or experts, which
-can be time consuming and costly, proving infeasible for millions of small and medium sized farms around the world.
+## 📌 Description
 
-This project is an approach to the development of plant disease recognition model, based on leaf image classification, by the
-use of deep convolutional networks. The developed model is able to recognize 38 different types of plant diseases out of of 14 different plants with the ability to distinguish plant leaves from their surroundings.
+Agriculture plays a critical role in global food security, and early detection of plant diseases is essential to reduce crop losses and improve productivity. Traditional disease identification methods rely heavily on manual inspection by farmers or agricultural experts, which can be time-consuming, expensive, and difficult to scale for millions of farms worldwide.
 
-## Leaf Image Classification
+**PLANT-AI** is a deep learning-based plant disease recognition system that identifies diseases from leaf images using image classification techniques. The project uses convolutional neural networks (CNNs) and transfer learning approaches to automatically classify plant diseases and distinguish leaves from their backgrounds.
 
-## <img src="./Assets/batch.png" alt="batch of image"/>
+The developed model can recognize **38 different disease categories across 14 plant species**, helping farmers and researchers achieve faster and more accurate disease detection while reducing unnecessary pesticide usage.
 
-This process for building a model which can detect the disease assocaited with the leaf image. The key points to be followed are:
+---
 
-1. Data gathering
+# 🍃 Leaf Image Classification
 
-   The dataset taken was **"New Plant Diseases Dataset"**. It can be downloaded through the link "https://www.kaggle.com/vipoooool/new-plant-diseases-dataset". It is an Image dataset containing images of different healthy and unhealthy crop leaves.
+The objective of this project is to build a machine learning model capable of detecting plant diseases from leaf images. The development process consists of the following steps:
 
-2. Model building
+## 1. Dataset Collection
 
-   - I have used pytorch for building the model.
-   - I used three models:-
-     1. The CNN model architecture consists of CNN Layer, Max Pooling, Flatten a Linear Layers.
-     2. Using Transfer learning VGG16 Architecture.
-     3. Using Transfer learning resnet34 Architecture.
+The model was trained using the **New Plant Diseases Dataset**, which contains images of healthy and diseased crop leaves.
 
-3. Training
+Dataset source:
 
-   The model was trained by using variants of above layers mentioned in model building and by varying hyperparameters. The best model was able to achieve 98.42% of test accuracy.
+- Kaggle: https://www.kaggle.com/vipoooool/new-plant-diseases-dataset
 
-4. Testing
+The dataset includes multiple plant species with different disease categories, making it suitable for training a multi-class image classification model.
 
-   The model was tested on total 17572 images of 38 classes.<br/>
-   The model used for prediction on sample images. It can be seen below:
+---
 
-5. Various Model Architecture tried along with Learning Rate and Optimizer and various accuracy obtained with different models.
+## 2. Model Development
 
-  <img src="./Assets/models.png" alt="models" />
+The project uses **PyTorch** for implementing and training deep learning models.
+
+Three different architectures were explored:
+
+### 🔹 Custom CNN Model
+A convolutional neural network built using:
+
+- Convolutional layers
+- Max pooling layers
+- Flatten layers
+- Fully connected (linear) layers
+
+### 🔹 VGG16 Transfer Learning
+A pretrained VGG16 model was fine-tuned for plant disease classification.
+
+### 🔹 ResNet34 Transfer Learning
+A pretrained ResNet34 architecture was adapted and trained for improved feature extraction and classification performance.
+
+---
+
+## 3. Training
+
+The models were trained using different combinations of architectures and hyperparameters to achieve the best classification performance.
+
+The best-performing model achieved:
+
+**✅ Test Accuracy: 98.42%**
+
+---
+
+## 4. Testing
+
+The final model was evaluated on:
+
+- **17,572 test images**
+- **38 disease classes**
+
+The trained model successfully predicts diseases from unseen leaf images.
+
+---
+
+# 🤖 Model Capabilities
+
+The final model can identify:
+
+- **38 types of plant diseases**
+- Across **14 different plant species**
+
+The complete list of supported plants and diseases can be found in:
+
+[Plant and Disease List](Src)
+
+---
+
+# 🚀 Future Improvements
+
+Future enhancements planned for this project include:
+
+- Implementing **image localization** to identify the exact infected regions of leaves.
+- Developing a recommendation system for suitable pesticides and disease control methods.
+- Adding intelligent crop management strategies, including:
+  - Fungicide recommendations
+  - Pesticide application guidance
+  - Early disease monitoring
+
+These improvements can help farmers make faster decisions and improve crop productivity.
+
+---
+
+# 📂 Project Structure
 
 
-## Details about the model
-
-### The model will be able to detect `38` types of `diseases` of `14 Unique plants`
-
-- The detail list of plants and diseases can be seen in [List](Src)
-
-## Further Work:
-
-- Implementing Image Localisation to find the excat position of the leaf affected .
-- Building Recommender system for recommendation of proper presticides and control method for the disease.
-- Implementing the appropriate management strategies like fungicide applications and pesticide applications could lead to early
-  information on crop health and disease detection.This could facilitate the control of diseases and improve productivity.
-
-## Usage:
-
-- `Flask` : Code for Flask Server and deployment
-- `TestImages` : Sample image for model testing
-- `Src` : All The source code for building models
-- `Models` : All the Pretrained Models of Pytorch
-
-## License
-
-This project is Licensed under `MIT`
-
-## Explanation
-
-`To understand the code :` You can find the complete explanation to the code in [Article](https://medium.com/@soumyajit4419/plant-ai-c8fc95ed90e6?source=friends_link&sk=4707825cbaefa2dcaaa92d0e3ed5de01)
+PLANT-AI
+│
+├── Flask
+│ └── Flask server and deployment code
+│
+├── TestImages
+│ └── Sample images for testing predictions
+│
+├── Src
+│ └── Source code for training and building models
+│
+└── Models
+└── Pretrained PyTorch models
 
 
-### Show your support
+---
 
-Give a ⭐ if you like this website!
+# 🛠️ Technologies Used
 
-<a href="https://www.buymeacoffee.com/soumyajit4419" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" height= "60px" width= "217px" ></a>
+- Python
+- PyTorch
+- Convolutional Neural Networks (CNN)
+- Transfer Learning
+- VGG16
+- ResNet34
+- Flask
+
+---
+
+# 📄 License
+
+This project is licensed under the **MIT License**.
