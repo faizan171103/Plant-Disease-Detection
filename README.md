@@ -33,6 +33,7 @@ The dataset includes multiple plant species with different disease categories, m
 
 ## 2. Model Development
 
+<<<<<<< HEAD
 The project uses **PyTorch** for implementing and training deep learning models.
 
 Three different architectures were explored:
@@ -104,6 +105,8 @@ These improvements can help farmers make faster decisions and improve crop produ
 
 # 📂 Project Structure
 
+=======
+>>>>>>> 51d9a54ed539544bd0873f94e46edbc2c33f71f3
 
 PLANT-AI
 │
@@ -124,6 +127,7 @@ PLANT-AI
 
 # 🛠️ Technologies Used
 
+<<<<<<< HEAD
 - Python
 - PyTorch
 - Convolutional Neural Networks (CNN)
@@ -137,3 +141,6 @@ PLANT-AI
 # 📄 License
 
 This project is licensed under the **MIT License**.
+=======
+<a href="https://www.buymeacoffee.com/soumyajit4419" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" height= "60px" width= "217px" ></a>
+>>>>>>> 51d9a54ed539544bd0873f94e46edbc2c33f71f3
